@@ -1,14 +1,19 @@
-import Container from "../../styles/Container"
-import { HeaderContainer } from "./Header.styles"
+import * as S from './Header.styles';
+import Container from '../../styles/Container';
+import HeaderLogo from './HeaderLogo/HeaderLogo';
+import HeaderNav from './HeaderNav/HeaderNav';
 
 const Header = () => {
   return (
-    <HeaderContainer>
+    <S.HeaderContainer>
       <Container>
-        <p>Header</p>
+        <S.HeaderArea>
+          <HeaderLogo />
+          <HeaderNav />
+        </S.HeaderArea>
       </Container>
-    </HeaderContainer>
+    </S.HeaderContainer>
   )
 }
 
-export default Header
+export default Header;

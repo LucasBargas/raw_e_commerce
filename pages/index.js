@@ -12,7 +12,7 @@ const Home = () => {
         <meta property="og:url" content="https://raw-plum.vercel.app/" />
       </Head>
 
-      <div></div>
+      <div>Início</div>
     </>
   )
 }
