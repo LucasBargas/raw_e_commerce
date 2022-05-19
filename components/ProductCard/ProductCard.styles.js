@@ -8,6 +8,7 @@ export const FastVisualization = styled.div`
   width: 100%;
   height: 2rem;
   overflow-y: hidden;
+  font-size: .75rem;
   text-align: center;
   background: transparent;
   cursor: pointer;
