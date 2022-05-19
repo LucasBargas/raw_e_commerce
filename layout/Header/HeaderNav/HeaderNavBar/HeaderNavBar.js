@@ -54,7 +54,7 @@ const NavBar = () => {
           {navBarLinks.map(({ title, path }) => (
             <li key={title}>
               <Link href={path}>
-                <a onTouchStart={handleClickOnLink} onClick={handleClickOnLink} className={pathname === path ? 'activeLink' : ''}>{title}</a>
+                <a onClick={handleClickOnLink} className={pathname === path ? 'activeLink' : ''}>{title}</a>
               </Link>
             </li>
           ))}
