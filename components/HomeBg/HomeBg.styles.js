@@ -26,7 +26,7 @@ export const HomeBgContainer = styled.section`
 
   @media (max-width: 1024px) {
     height: 60vh;
-    min-height: none;
+    min-height: 0;
     background-position: center;
   }
 
@@ -46,11 +46,30 @@ export const HomeBgArea = styled.div`
   color: ${({ theme }) => theme.colors.lightColor};
   text-align: center;
 
+  @media (max-width: 414px) {
+    max-width: none;
+  }
+
   h1 {
     font-family: 'Anton-Regular';
     text-transform: uppercase;
     letter-spacing: 4px;
     line-height: 5.5rem;
-    font-size: 78px;
+    font-size: 4.875rem;
+
+    @media (max-width: 640px) {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+
+    @media (max-width: 414px) {
+      font-size: 3.5rem;
+      line-height: 4rem;
+    }
+
+    @media (max-width: 276px) {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
   }
 `;

@@ -26,7 +26,7 @@ import productHover12 from '../public/images/products/product_hover_12.png';
 
 const products = [
   {
-    id: 0,
+    id: 1,
     sku: '001',
     product: 'Boné Raw Aba Reta - Um',
     price: 21.99,
@@ -43,7 +43,7 @@ const products = [
     ]
   },
   {
-    id: 1,
+    id: 2,
     sku: '002',
     product: 'Boné Raw Aba Reta - Dois',
     price: 23.99,
@@ -60,7 +60,7 @@ const products = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     sku: '003',
     product: 'Boné Raw Aba Reta - Três',
     price: 22.99,
@@ -77,7 +77,7 @@ const products = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     sku: '004',
     product: 'Boné Raw Aba Reta - Quatro',
     price: 26.99,
@@ -94,7 +94,7 @@ const products = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     sku: '005',
     product: 'Boné Raw Aba Reta - Cinco',
     price: 23.99,
@@ -111,7 +111,7 @@ const products = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     sku: '006',
     product: 'Boné Raw Aba Reta - Seis',
     price: 21.99,
@@ -128,7 +128,7 @@ const products = [
     ]
   },
   {
-    id: 6,
+    id: 7,
     sku: '007',
     product: 'Boné Raw Aba Reta - Sete',
     price: 24.99,
@@ -145,7 +145,7 @@ const products = [
     ]
   },
   {
-    id: 7,
+    id: 8,
     sku: '008',
     product: 'Boné Raw Aba Reta - Oito',
     price: 24.99,
@@ -162,7 +162,7 @@ const products = [
     ]
   },
   {
-    id: 8,
+    id: 9,
     sku: '009',
     product: 'Boné Raw Aba Reta - Nove',
     price: 21.99,
@@ -179,7 +179,7 @@ const products = [
     ]
   },
   {
-    id: 9,
+    id: 10,
     sku: '0010',
     product: 'Boné Raw Aba Reta - Dez',
     price: 25.99,
@@ -196,7 +196,7 @@ const products = [
     ]
   },
   {
-    id: 10,
+    id: 11,
     sku: '0011',
     product: 'Boné Raw Aba Reta - Onze',
     price: 22.99,
@@ -213,7 +213,7 @@ const products = [
     ]
   },
   {
-    id: 11,
+    id: 12,
     sku: '0012',
     product: 'Boné Raw Aba Reta - Doze',
     price: 25.99,
