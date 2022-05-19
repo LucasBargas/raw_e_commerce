@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 import bg from '../../public/images/bg/initial_bg.png';
 
-export const HomeBgArea = styled.section`
+export const HomeBgContainer = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -34,5 +37,20 @@ export const HomeBgArea = styled.section`
 
   @media (max-width: 370px) {
     height: calc(100vh - 68px);
+  }
+`;
+
+export const HomeBgArea = styled.div`
+  max-width: 500px;
+  margin: 0 auto;
+  color: ${({ theme }) => theme.colors.lightColor};
+  text-align: center;
+
+  h1 {
+    font-family: 'Anton-Regular';
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 5.5rem;
+    font-size: 78px;
   }
 `;

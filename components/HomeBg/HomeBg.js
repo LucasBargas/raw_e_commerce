@@ -1,9 +1,16 @@
-import { HomeBgArea } from "./HomeBg.styles";
+import * as S from "./HomeBg.styles";
+import Container from '../../styles/Container';
 
 
 const HomeBg = () => {
   return (
-    <HomeBgArea>HomeBg</HomeBgArea>
+    <S.HomeBgContainer>
+      <Container>
+        <S.HomeBgArea>
+          <h1>Seja sempre original</h1>
+        </S.HomeBgArea>
+      </Container>
+    </S.HomeBgContainer>
   )
 }
 
