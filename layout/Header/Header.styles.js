@@ -7,6 +7,7 @@ export const HeaderContainer = styled.header`
   width: 100%;
   z-index: 9000;
   padding: .75rem 0;
+  box-shadow: rgb(0, 0, 0, .1) 0px 2px 15px;
   background: ${({ theme }) => theme.colors.lightColor};
   color: ${({ theme }) => theme.colors.primaryColor};
 `;
