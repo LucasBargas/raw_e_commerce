@@ -20,7 +20,7 @@ const navBarLinks = [
 
 const NavBar = () => {
   const { pathname } = useRouter();
-  const [menu, setMenu] = useState(true);
+  const [menu, setMenu] = useState(false);
 
   const handleMenuMobile = ({ target }) => {
     if (target.closest('button')) setMenu(!menu);
