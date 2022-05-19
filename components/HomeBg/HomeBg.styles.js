@@ -108,6 +108,7 @@ export const CallToMoreProductions = styled.div`
   p {
     font-size: .9375rem;
     text-transform: uppercase;
+    letter-spacing: 1px;
 
     @media (max-width: 214px) {
       font-size: .75rem;
