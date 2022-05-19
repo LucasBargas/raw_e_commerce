@@ -6,6 +6,7 @@ export const HomeBgArea = styled.section`
   background-position: center;
   background-size: cover;
   background-image: url(${bg.src});
+  min-height: 580px;
 
   @media (max-width: 1536px) {
     height: 80vh;
@@ -22,6 +23,7 @@ export const HomeBgArea = styled.section`
 
   @media (max-width: 1024px) {
     height: 60vh;
+    min-height: none;
     background-position: center;
   }
 
