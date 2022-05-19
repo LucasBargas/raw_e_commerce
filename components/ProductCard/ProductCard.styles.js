@@ -8,12 +8,12 @@ export const FastVisualization = styled.div`
   width: 100%;
   height: 2rem;
   overflow-y: hidden;
-  font-size: .75rem;
   text-align: center;
   background: transparent;
   cursor: pointer;
   
   p {
+    font-size: .75rem;
     transform: translate3d(0, 2rem, 0);
     transition: transform .3s;
 
