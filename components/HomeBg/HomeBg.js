@@ -17,11 +17,11 @@ const HomeBg = () => {
             <Button 
               paddingTop='2rem'
               bgColor='transparent' 
-              fontColor={`${Themes.colors.lightColor}`}
-              borderColor={`${Themes.colors.lightColor}`}
-              hoverBgColor={`${Themes.colors.lightColor}`}
-              hoverFontColor={`${Themes.colors.primaryColor}`}
-              hoverBorderColor={`${Themes.colors.lightColor}`}
+              fontColor={Themes.colors.lightColor}
+              borderColor={Themes.colors.lightColor}
+              hoverBgColor={Themes.colors.lightColor}
+              hoverFontColor={Themes.colors.primaryColor}
+              hoverBorderColor={Themes.colors.lightColor}
             >
               Comprar
             </Button>

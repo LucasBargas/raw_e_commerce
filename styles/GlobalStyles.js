@@ -41,7 +41,7 @@ const GlobalStyle = createGlobalStyle`
     background: ${({ theme }) => theme.colors.lightColor};
     font-family: 'Avenir-Book';
     
-    ul {
+    ul, li {
       list-style: none;
     }
 

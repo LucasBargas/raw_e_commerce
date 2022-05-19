@@ -1,5 +1,6 @@
 import Head from "next/head";
 import HomeBg from "../components/HomeBg/HomeBg";
+import HomeShowcase from "../components/HomeShowcase/HomeShowcase";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
 
       <>
         <HomeBg />
+        <HomeShowcase />
       </>
     </>
   )
