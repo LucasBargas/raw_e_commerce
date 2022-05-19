@@ -94,7 +94,7 @@ export const NavBarArea = styled.div`
 export const NavBarCloseMobile = styled.div`
   display: none;
   align-items: center;
-  padding: .5rem;
+  padding: 1rem .5rem .5rem .5rem;
 
   @media (max-width: 820px) {
     width: 100%;
@@ -135,7 +135,7 @@ export const NavBarMedias = styled.div`
   align-items: center;
   flex-wrap: wrap;
   position: absolute;
-  bottom: 4rem;
+  bottom: 6rem;
   left: 0;
   width: 100%;
   padding: 0 2rem;
