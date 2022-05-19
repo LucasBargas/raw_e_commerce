@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ButtonContainer from "./button.styles";
+import ButtonContainer from "./Button.styles";
 
 const Button = ({ paddingTop, bgColor, fontColor, borderColor, hoverBgColor, hoverFontColor, hoverBorderColor, children }) => {
   return (
