@@ -68,7 +68,7 @@ export const NavBarArea = styled.div`
           position: absolute;
           bottom: 5px;
           left: 0;
-          transition: .5s;
+          transition: .4s;
 
           @media (max-width: 820px) {
             background: ${({ theme }) => theme.colors.lightColor};
