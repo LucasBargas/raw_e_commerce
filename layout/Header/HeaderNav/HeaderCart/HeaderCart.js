@@ -1,6 +1,11 @@
+import { BsCartFill } from 'react-icons/bs';
+import HeaderCartContainer from './HeaderCart.styles';
+
 const HeaderCart = () => {
   return (
-    <div>HeaderCart</div>
+    <HeaderCartContainer>
+      <BsCartFill/>
+    </HeaderCartContainer>
   )
 }
 

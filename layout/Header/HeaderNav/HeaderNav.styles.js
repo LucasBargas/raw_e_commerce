@@ -2,14 +2,7 @@ import styled from 'styled-components';
 
 const NavContainer = styled.div`
   display: flex;
-  align-items: flex-end;
-  flex-direction: column-reverse;
-
-  @media (max-width: 820px) {
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: .5rem;
-  }
+  align-items: center;
 `;
 
 export default NavContainer;

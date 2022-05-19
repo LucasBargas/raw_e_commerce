@@ -22,8 +22,13 @@ const Container = styled.div`
 
   @media (max-width: 1200px) {
     max-width: none;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 `;
 

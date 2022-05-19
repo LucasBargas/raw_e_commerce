@@ -4,6 +4,11 @@ import { css } from 'styled-components';
 export const NavBarArea = styled.div`
   display: flex;
   align-items: center;
+  padding-right: 3rem;
+
+  @media (max-width: 820px) {
+    padding-right: 1rem;
+  }
 
   nav {
     position: relative;
