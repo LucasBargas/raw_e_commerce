@@ -6,6 +6,10 @@ const MainContent = styled.main`
   @media (max-width: 370px) {
     margin-top: 68px;
   }
+
+  @media (max-width: 276px) {
+    margin-top: 55.09px;
+  }
 `;
 
 export default MainContent;

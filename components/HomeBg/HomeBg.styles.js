@@ -38,6 +38,10 @@ export const HomeBgContainer = styled.section`
   @media (max-width: 370px) {
     height: calc(100vh - 68px);
   }
+
+  @media (max-width: 276px) {
+    height: calc(100vh - 55.09px);
+  }
 `;
 
 export const HomeBgArea = styled.div`
@@ -70,6 +74,11 @@ export const HomeBgArea = styled.div`
     @media (max-width: 276px) {
       font-size: 3rem;
       line-height: 3.5rem;
+    }
+    
+    @media (max-width: 214px) {
+      font-size: 2rem;
+      line-height: 2.5rem;
     }
   }
 `;

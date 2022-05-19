@@ -30,6 +30,11 @@ const Container = styled.div`
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
+  @media (max-width: 276px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 `;
 
 export default Container;
