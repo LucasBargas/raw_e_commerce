@@ -12,7 +12,7 @@ const HomeBg = () => {
           <h1>Seja sempre original</h1>
 
           <S.CallToMoreProductions>
-            <p>Novos itens disponíveisem nossa Loja</p>
+            <p>Novos itens disponíveis em nossa Loja</p>
 
             <Button 
               paddingTop='2rem'
