@@ -1,9 +1,14 @@
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
+import * as S from './HeaderNavBar.styles';
 import { BiMenu } from 'react-icons/bi';
 import { IoClose } from 'react-icons/io5';
-import * as S from './HeaderNavBar.styles';
+import { FaFacebookF } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
+import { FaYoutube } from 'react-icons/fa';
+import { FaPinterest } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 
 const navBarLinks = [
   { title: 'Início', path: '/' },
@@ -15,15 +20,13 @@ const navBarLinks = [
 
 const NavBar = () => {
   const { pathname } = useRouter();
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(true);
 
   const handleMenuMobile = ({ target }) => {
     if (target.closest('button')) setMenu(!menu);
   }
 
-  const handleClickOnLink = () => {
-    setMenu(false);
-  }
+  const handleClickOnLink = (e) => setMenu(false);
 
   useEffect(() => {
     const handleOutsideClick = ({ target }) => {
@@ -51,11 +54,19 @@ const NavBar = () => {
           {navBarLinks.map(({ title, path }) => (
             <li key={title}>
               <Link href={path}>
-                <a onClick={handleClickOnLink} className={pathname === path ? 'activeLink' : ''}>{title}</a>
+                <a onTouchStart={handleClickOnLink} onClick={handleClickOnLink} className={pathname === path ? 'activeLink' : ''}>{title}</a>
               </Link>
             </li>
           ))}
         </ul>
+
+        <S.NavBarMedias>
+          <FaFacebookF />
+          <FaTwitter />
+          <FaYoutube />
+          <FaPinterest />
+          <FaInstagram />
+        </S.NavBarMedias>
       </nav>
 
       <S.NavBarOpenMobile>

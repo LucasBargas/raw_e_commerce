@@ -6,8 +6,11 @@ export const NavBarArea = styled.div`
   align-items: center;
 
   nav {
+    position: relative;
+
     @media (max-width: 820px) {
       background: ${({ theme }) => theme.colors.primaryColor};
+      overflow-y: auto;
       position: fixed;
       top: 0;
       right: 0;
@@ -118,5 +121,33 @@ export const NavBarOpenMobile = styled.div`
     font-size: 1.75rem;
     background: transparent;
     color: ${({ theme }) => theme.colors.primaryColor};
+  }
+`;
+
+export const NavBarMedias = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 4rem;
+  left: 0;
+  width: 100%;
+  padding: 0 2rem;
+  color: ${({ theme }) => theme.colors.lightColor};
+
+  @media (max-width: 214px) {
+    bottom: 3rem;
+  }
+
+  svg {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.625rem;
+    margin: 0 .5rem;
+
+    @media (max-width: 214px) {
+      font-size: 1.25rem;
+    }
   }
 `;

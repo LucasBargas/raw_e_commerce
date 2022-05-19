@@ -6,7 +6,7 @@ const NavContainer = styled.div`
   flex-direction: column-reverse;
 
   @media (max-width: 820px) {
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     gap: .5rem;
   }
