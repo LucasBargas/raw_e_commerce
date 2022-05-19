@@ -13,7 +13,7 @@ export const FastVisualization = styled.div`
   cursor: pointer;
   
   p {
-    font-size: .75rem;
+    font-size: .875rem;
     transform: translate3d(0, 2rem, 0);
     transition: transform .3s;
 
