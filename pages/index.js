@@ -1,4 +1,5 @@
 import Head from "next/head";
+import HomeBg from "../components/HomeBg/HomeBg";
 
 const Home = () => {
   return (
@@ -12,7 +13,9 @@ const Home = () => {
         <meta property="og:url" content="https://raw-plum.vercel.app/" />
       </Head>
 
-      <div>Início</div>
+      <>
+        <HomeBg />
+      </>
     </>
   )
 }
