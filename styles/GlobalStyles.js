@@ -11,8 +11,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Anton-Regular';
     src: url('../fonts/Anton-Regular.ttf') format('ttf'), url('../fonts/Anton-Regular.woff') format('woff'), url('../fonts/Anton-Regular.woff2') format('woff2');
     font-style: normal;
-    font-display:
-    swap;
+    font-display: swap;
   }
 
   @font-face {

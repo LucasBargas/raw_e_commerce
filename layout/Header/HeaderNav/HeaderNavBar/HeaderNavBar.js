@@ -26,7 +26,7 @@ const NavBar = () => {
     if (target.closest('button')) setMenu(!menu);
   }
 
-  const handleClickOnLink = (e) => setMenu(false);
+  const handleClickOnLink = () => setMenu(false);
 
   useEffect(() => {
     const handleOutsideClick = ({ target }) => {
