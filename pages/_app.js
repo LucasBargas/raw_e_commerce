@@ -3,15 +3,18 @@ import { ThemeProvider } from 'styled-components';
 import Theme from '../styles/Themes';
 import Header from '../layout/Header/Header';
 import MainContent from '../styles/MainContent';
+import { UserStorage } from '../utils/context';
 
 const App = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyle />
-      <Header />
-      <MainContent>
-        <Component {...pageProps} />
-      </MainContent>
+      <UserStorage>
+        <Header />
+        <MainContent>
+          <Component {...pageProps} />
+        </MainContent>
+      </UserStorage>
     </ThemeProvider>
   )
 }

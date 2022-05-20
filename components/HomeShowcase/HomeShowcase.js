@@ -14,7 +14,7 @@ const HomeShowcase = () => {
         <TitleSection>Coleção de Edição Limitada</TitleSection>
         <Showcase>
           {products.filter(p => p.id < 9).map(p => (
-            <ProductCard p={p} key={p.product} href={`/loja/produto/${p.id}`} id={p.id - 1} />
+            <ProductCard p={p} key={p.product} href={`/loja/produto/${p.id}`} id={p.id} />
           ))}
         </Showcase>
         <S.CallToSeeMore>

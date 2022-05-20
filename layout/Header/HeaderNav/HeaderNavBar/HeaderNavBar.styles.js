@@ -52,6 +52,7 @@ export const NavBarArea = styled.div`
         display: block;
         color: ${({ theme }) => theme.colors.primaryColor};
         padding: .5rem 0;
+        letter-spacing: 1px;
         position: relative;
 
         @media (max-width: 820px) {

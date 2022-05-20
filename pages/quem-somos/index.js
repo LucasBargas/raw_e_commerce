@@ -11,6 +11,10 @@ const AboutUs = () => {
         <meta property="og:description" content="Esta aplicação é uma réplica desenvolvida por Lucas Bargas, com o objetivo de praticar o framework NextJS em conjunto com o Styled Components." />
         <meta property="og:url" content="https://raw-lucasbargas.vercel.app/quem-somos" />
       </Head>
+
+      <>
+        <h1>Quem somos</h1>
+      </>
     </>
   )
 }

@@ -1,10 +1,19 @@
+import React, {useContext} from 'react';
 import Link from 'next/link';
 import * as S from './ProductCard.styles';
 import Image from 'next/image';
+import { UserContext } from "../../utils/context";
 
 const ProductCard = ({ href, id, p, props }) => {
+  const { setIdRef } = useContext(UserContext);
+
+  const handleClick = ({ target }) => {
+    const id = Number(target.closest('div.productCard').id);
+    setIdRef(id);
+  }
+
   return (
-    <S.ProductCardContainer id={id} {...props}>
+    <S.ProductCardContainer className='productCard' id={id} {...props}>
       <figure>
         <Link href={href}>
           <a>
@@ -14,7 +23,7 @@ const ProductCard = ({ href, id, p, props }) => {
           </a>
         </Link>
         
-        <S.FastVisualization>
+        <S.FastVisualization onClick={handleClick}>
           <p>Visualização rápida</p>
         </S.FastVisualization>
       </figure>
