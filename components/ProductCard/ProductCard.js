@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import Link from 'next/link';
 import * as S from './ProductCard.styles';
 import Image from 'next/image';
-import { UserContext } from "../../utils/context";
+import { UserContext } from "../../utils/Context";
 
 const ProductCard = ({ href, id, p, props }) => {
   const { setIdRef } = useContext(UserContext);

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { UserContext } from "../../utils/context";
+import { UserContext } from "../../utils/Context";
 import products from '../../utils/products';
 import * as S from './ModalProduct.styles';
 import { IoClose } from 'react-icons/io5';

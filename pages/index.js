@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import Head from "next/head";
 import HomeBg from "../components/HomeBg/HomeBg";
 import HomeShowcase from "../components/HomeShowcase/HomeShowcase";
-import { UserContext } from "../utils/context";
+import { UserContext } from "../utils/Context";
 import ModalProduct from '../components/ModalProduct/ModalProduct';
 
 const Home = () => {
