@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import * as S from './HeaderNavBar.styles';
@@ -21,6 +21,7 @@ const navBarLinks = [
 const NavBar = () => {
   const { pathname } = useRouter();
   const [menu, setMenu] = useState(false);
+  const pageRef = useRef();
 
   const handleMenuMobile = ({ target }) => {
     if (target.closest('button')) setMenu(!menu);
@@ -41,6 +42,19 @@ const NavBar = () => {
     return () => window.removeEventListener('click', handleOutsideClick);
   }, [menu])
 
+  useEffect(() => {
+    const pagesArr = Array.from(pageRef.current.children).filter(page => {
+      return page.children[0].innerText === 'Loja';
+    })
+
+    if (pathname.includes('loja')) {
+      pagesArr[0].children[0].classList.add('activeLink');
+    } else {
+      pagesArr[0].children[0].classList.remove('activeLink');
+    }
+
+  }, [pageRef, pathname])
+
   return (
     <S.NavBarArea menu={menu}>
       <nav id='headerNavBar'>
@@ -50,7 +64,7 @@ const NavBar = () => {
           </button>
         </S.NavBarCloseMobile>
 
-        <ul>
+        <ul ref={pageRef}>
           {navBarLinks.map(({ title, path }) => (
             <li key={title}>
               <Link href={path}>

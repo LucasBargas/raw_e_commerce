@@ -9,7 +9,7 @@ export const UserStorage = ({ children }) => {
     <UserContext.Provider 
       value={{ 
         idRef,
-        setIdRef,
+        setIdRef
       }}
     >
       {children}
