@@ -40,7 +40,7 @@ export const NavBarArea = styled.div`
     
     ul {
       display: flex;
-      gap: 1.75rem;
+      gap: 2rem;
 
       @media (max-width: 820px) {
         padding: 0 2rem 2rem 2rem;
