@@ -8,7 +8,7 @@ const ProductCard = ({ href, id, p, props }) => {
       <figure>
         <Link href={href}>
           <a>
-            {p.photos.map((photo, index) => (
+            {p.photos.map(photo => (
               <Image key={photo.title} src={photo.src} alt={photo.title} />
             ))}
           </a>

@@ -1,6 +1,10 @@
+import { useRouter } from "next/router";
+
 const Product = () => {
+  const { query } = useRouter();
+
   return (
-    <div>Product</div>
+    <div>Produto {query.produtoId}</div>
   )
 }
 
