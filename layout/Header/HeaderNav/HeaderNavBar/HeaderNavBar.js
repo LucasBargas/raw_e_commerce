@@ -53,7 +53,7 @@ const NavBar = () => {
       pagesArr[0].children[0].classList.remove('activeLink');
     }
 
-  }, [pageRef, pathname])
+  }, [pathname])
 
   return (
     <S.NavBarArea menu={menu}>
