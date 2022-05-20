@@ -9,23 +9,17 @@ const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: 'Anton-Regular';
-    src: url('../fonts/Anton-Regular.ttf') format('ttf'), url('../fonts/Anton-Regular.woff') format('woff'), url('../fonts/Anton-Regular.woff2') format('woff2');
-    font-style: normal;
-    font-display: swap;
+    src: url('../fonts/Anton-Regular.ttf'), url('../fonts/Anton-Regular.woff'), url('../fonts/Anton-Regular.woff2');
   }
 
   @font-face {
     font-family: 'Avenir-Book';
-    src: url('../fonts/Avenir-Book.otf') format('otf'), url('../fonts/Avenir-Book.woff') format('woff'), url('../fonts/Avenir-Book.woff2') format('woff2');
-    font-style: normal;
-    font-display: swap;
+    src: url('../fonts/Avenir-Book.otf'), url('../fonts/Avenir-Book.woff'), url('../fonts/Avenir-Book.woff2');
   }
 
   @font-face {
     font-family: 'Avenir-Black';
-    src: url('../fonts/Avenir-Black.otf') format('otf'), url('../fonts/Avenir-Black.woff') format('woff'), url('../fonts/Avenir-Black.woff2') format('woff2');
-    font-style: normal;
-    font-display: swap;
+    src: url('../fonts/Avenir-Black.otf'), url('../fonts/Avenir-Black.woff'), url('../fonts/Avenir-Black.woff2');
   }
   
   html {
