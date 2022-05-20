@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { useRouter } from "next/router";
 
 const Product = () => {
   const { query } = useRouter();
 
   return (
-    <div>Produto {query.produtoId}</div>
+    <h1>Produto {query.produtoId}</h1>
   )
 }
 

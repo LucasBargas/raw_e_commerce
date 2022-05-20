@@ -43,16 +43,15 @@ const NavBar = () => {
   }, [menu])
 
   useEffect(() => {
-    const pagesArr = Array.from(pageRef.current.children).filter(page => {
-      return page.children[0].innerText === 'Loja';
+    Array.from(pageRef.current.children).forEach(page => {
+      if (page.children[0].innerText === 'Loja') {
+        if (pathname.includes('loja')) {
+          page.children[0].classList.add('activeLink');
+        } else {
+          page.children[0].classList.remove('activeLink');
+        }
+      }
     })
-
-    if (pathname.includes('loja')) {
-      pagesArr[0].children[0].classList.add('activeLink');
-    } else {
-      pagesArr[0].children[0].classList.remove('activeLink');
-    }
-
   }, [pathname])
 
   return (
