@@ -18,7 +18,7 @@ const ProductCard = ({ href, id, p, props }) => {
         <Link href={href}>
           <a>
             {p.photos.map(photo => (
-              <Image key={photo.title} src={photo.src} alt={photo.title} />
+              <Image key={photo.title} src={photo.src} alt={photo.title} loading='lazy' />
             ))}
           </a>
         </Link>
