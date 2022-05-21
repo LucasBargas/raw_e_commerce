@@ -57,7 +57,7 @@ export const ModalArea = styled.div`
     width: 100%;
   }
 
-  @media (max-width: 414px) {
+  @media (max-width: 768px) {
     padding: .75rem 0 1.25rem 0;
   }
 `;

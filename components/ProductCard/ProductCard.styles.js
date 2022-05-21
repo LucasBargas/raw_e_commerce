@@ -11,6 +11,10 @@ export const FastVisualization = styled.div`
   text-align: center;
   background: transparent;
   cursor: pointer;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
   
   p {
     font-size: .875rem;
@@ -43,6 +47,10 @@ export const ProductCardContainer = styled.div`
     padding-bottom: .5rem;
     position: relative;
     z-index: 4;
+
+    @media (max-width: 480px) {
+      padding-bottom: 0;
+    }
 
     span:nth-of-type(2) {
       position: absolute !important;
