@@ -3,6 +3,7 @@ import { UserContext } from "../../utils/Context";
 import products from '../../utils/products';
 import * as S from './ModalProduct.styles';
 import { IoClose } from 'react-icons/io5';
+import Product from '../Product/Product';
 
 const ModalProduct = () => {
   const { idRef, setIdRef } = useContext(UserContext);
@@ -20,6 +21,7 @@ const ModalProduct = () => {
           <S.CloseModal>
             <button onClick={() => closeModal()}><IoClose /></button>
           </S.CloseModal>
+          <Product photos={p.photos} datas={p} />
         </S.ModalArea>
       ))}
     </S.ModalContainer>

@@ -38,9 +38,14 @@ const GlobalStyle = createGlobalStyle`
       list-style: none;
     }
 
-    input, textarea, button {
+    input, textarea, select, button {
       outline: none;
       border: none;
+    }
+
+    input, textarea, select {
+      display: block;
+      width: 100%;
     }
 
     button {

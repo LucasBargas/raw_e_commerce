@@ -34,27 +34,31 @@ export const ModalContainer = styled.section`
   animation: ${showModalContainer} .4s forwards;
 
   @media (max-width: 1200px) {
-    padding: 0 2rem;
+    padding: 2rem;
   }
 
   @media (max-width: 480px) {
-    padding: 0 1.5rem;
+    padding: 1.5rem;
   }
 
   @media (max-width: 276px) {
-    padding: 0 1rem;
+    padding: 1rem;
   }
 `;
 
 export const ModalArea = styled.div`
   background: ${({ theme }) => theme.colors.lightColor};
-  padding: 1.25rem 0;
-  width: 70%;
+  padding: 1.25rem 0 2.5rem 0;
+  width: 80%;
   border-radius: 4px;
   animation: ${showModalArea} .4s forwards;
 
   @media (max-width: 1024px) {
     width: 100%;
+  }
+
+  @media (max-width: 414px) {
+    padding: .75rem 0 1.25rem 0;
   }
 `;
 
@@ -63,6 +67,10 @@ export const CloseModal = styled.div`
   display: flex;
   justify-content: flex-end;
   padding-right: .5rem;
+
+  @media (max-width: 320px) {
+    padding-right: .25rem;
+  }
 
   button {
     display: inline-block;
@@ -76,6 +84,10 @@ export const CloseModal = styled.div`
 
       @media (max-width: 375px) {
         font-size: 1.5rem;
+      }
+
+      @media (max-width: 320px) {
+        font-size: 1.375rem;
       }
     }
   }
