@@ -1,6 +1,13 @@
+import React, {useContext} from 'react';
 import Head from "next/head";
+import NewProducts from "../../components/NewProducts/NewProducts";
+import { UserContext } from '../../utils/Context';
+import ModalProduct from '../../components/ModalProduct/ModalProduct';
+import AllProducts from '../../components/AllProducts/AllProducts';
 
 const Shop = () => {
+  const { idRef } = useContext(UserContext);
+
   return (
    <>
       <Head>
@@ -13,7 +20,9 @@ const Shop = () => {
       </Head>
 
       <>
-        <h1>Loja</h1>
+        <NewProducts />
+        <AllProducts />
+        {idRef !== undefined && <ModalProduct />}
       </>
    </>
   )

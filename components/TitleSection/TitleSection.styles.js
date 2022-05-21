@@ -11,7 +11,7 @@ const TitleSectionContainer = styled.div`
   h2 {
     font-family: 'Anton-Regular';
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: .5rem;
     font-size: 1.5625rem;
 
     @media (max-width: 360px) {
