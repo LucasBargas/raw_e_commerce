@@ -19,6 +19,7 @@ export const ProductFormContainer = styled.form`
   }
 
   input, select {
+    background: ${({ theme }) => theme.colors.lightColor} !important;
     color: ${({ theme }) => theme.colors.primaryColor};
     border: 1px solid ${({ theme }) => theme.colors.primaryColor};
     padding: .5rem 4px;
