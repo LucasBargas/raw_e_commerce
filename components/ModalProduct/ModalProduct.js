@@ -1,11 +1,14 @@
 import React, { useContext } from 'react';
+import { useRouter } from 'next/router';
 import { UserContext } from "../../utils/Context";
 import products from '../../utils/products';
 import * as S from './ModalProduct.styles';
 import { IoClose } from 'react-icons/io5';
-import Product from '../Product/Product';
+import ProductDatas from '../ProductDatas/ProductDatas';
+import ProductSlider from '../ProductSlider/ProductSlider';
 
 const ModalProduct = () => {
+  const { pathname } = useRouter();
   const { idRef, setIdRef } = useContext(UserContext);
 
   const closeModal = () => setIdRef(undefined);
@@ -21,7 +24,11 @@ const ModalProduct = () => {
           <S.CloseModal>
             <button onClick={() => closeModal()}><IoClose /></button>
           </S.CloseModal>
-          <Product photos={p.photos} datas={p} />
+
+          <S.ModalProductArea>
+            <ProductSlider photos={p.photos} />
+            <ProductDatas datas={p} />
+          </S.ModalProductArea>
         </S.ModalArea>
       ))}
     </S.ModalContainer>

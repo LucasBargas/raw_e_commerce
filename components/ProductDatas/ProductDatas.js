@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import * as S from './ProductDatas.styles';
 import ProductForm from './ProductForm/ProductForm';
-import { UserContext } from '../../../utils/Context';
+import { UserContext } from '../../utils/Context';
 
 const ProductDatas = ({ datas, children }) => {
   const { setIdRef } = useContext(UserContext);
@@ -15,14 +15,14 @@ const ProductDatas = ({ datas, children }) => {
       <span>SKU: {datas.sku}</span>
       <p>R$ {datas.price.toString().replace('.', ',')}</p>
       <ProductForm datas={datas} />
-        {pathname !== `/loja/produto/${datas.id}` && (
-          <S.LinkToShow>
-            <Link href={`/loja/produto/${datas.id}`}>
-              <a onClick={() => setIdRef(undefined)}>Ver mais informações</a>
-            </Link>
-          </S.LinkToShow>
-        )}
-        {children}
+      {pathname !== `/loja/produto/${datas.id}` && (
+        <S.LinkToShow>
+          <Link href={`/loja/produto/${datas.id}`}>
+            <a onClick={() => setIdRef(undefined)}>Ver mais informações</a>
+          </Link>
+        </S.LinkToShow>
+      )}
+      {children}
     </S.ProductDatasContainer>
   )
 }

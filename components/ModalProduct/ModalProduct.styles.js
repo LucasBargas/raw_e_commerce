@@ -92,3 +92,23 @@ export const CloseModal = styled.div`
     }
   }
 `;
+
+export const ModalProductArea = styled.div`
+  display: flex;
+  padding: 0 2rem;
+
+  @media (max-width: 820px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  @media (max-width: 414px) {
+    gap: 1.25rem;
+    padding: 0 1.25rem;
+  }
+
+  @media (max-width: 276px) {
+    gap: 1.25rem;
+    padding: 0 1rem;
+  }
+`;
