@@ -2,9 +2,9 @@ import React, { useContext } from 'react';
 import { UserContext } from "../../utils/Context";
 import products from '../../utils/products';
 import * as S from './ModalProduct.styles';
-import { IoClose } from 'react-icons/io5';
 import ProductDatas from '../ProductDatas/ProductDatas';
 import ProductSlider from '../ProductSlider/ProductSlider';
+import { IoClose } from 'react-icons/io5';
 
 const ModalProduct = () => {
   const { idRef, setIdRef } = useContext(UserContext);
