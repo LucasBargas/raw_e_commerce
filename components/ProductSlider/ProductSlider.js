@@ -28,7 +28,7 @@ const ProductSlider = ({ photos, children }) => {
     <S.ProductSliderContainer>
       <S.SliderArea ref={photosRef}>
         {photos.map(({ title, src }) => (
-          <Image key={title} src={src} alt={title} />
+          <Image key={title} src={src} alt={title} priority />
         ))}
       </S.SliderArea>
 
