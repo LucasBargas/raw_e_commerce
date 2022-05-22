@@ -4,6 +4,7 @@ import HomeBg from "../components/HomeBg/HomeBg";
 import HomeShowcase from "../components/HomeShowcase/HomeShowcase";
 import { UserContext } from "../utils/Context";
 import ModalProduct from '../components/ModalProduct/ModalProduct';
+import HomeInsta from '../components/HomeInsta/HomeInsta';
 
 const Home = () => {
   const { idRef } = useContext(UserContext);
@@ -23,6 +24,7 @@ const Home = () => {
         <HomeBg />
         <HomeShowcase />
         {idRef !== undefined && <ModalProduct />}
+        <HomeInsta />
       </>
     </>
   )
