@@ -1,5 +1,5 @@
 import Head from "next/head";
-import * as S from '../../styles/AboutUs';
+import * as S from '../../styles/AboutUs.styles';
 import Container from '../../styles/Container';
 import Image from "next/image";
 import TitleSection from '../../components/TitleSection/TitleSection';

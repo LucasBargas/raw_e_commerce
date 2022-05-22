@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import Head from 'next/head';
-import * as S from '../../../styles/Produto.styles';
+import * as S from '../../../styles/Product.styles';
 import Container from '../../../styles/Container';
 import { useRouter } from "next/router";
 import products from '../../../utils/products';

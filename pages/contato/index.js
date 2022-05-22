@@ -1,4 +1,8 @@
 import Head from "next/head";
+import * as S from "../../styles/Contact.styles";
+import Container from "../../styles/Container";
+import ContactInfos from '../../components/ContactInfos/ContactInfos';
+import ContactForm from '../../components/ContactForm/ContactForm';
 
 const Contact = () => {
   return (
@@ -13,7 +17,14 @@ const Contact = () => {
       </Head>
 
       <>
-        <h1>Contato</h1>
+        <S.ContactContainer>
+          <Container>
+            <S.ContactArea>
+              <ContactInfos />
+              <ContactForm />
+            </S.ContactArea>
+          </Container>
+        </S.ContactContainer>
       </>
     </>
   )
