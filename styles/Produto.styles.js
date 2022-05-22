@@ -4,7 +4,7 @@ export const ProductContainer = styled.section`
   padding: 3rem 0;
 `;
 
-export const ProcuctArea = styled.div`
+export const ProductArea = styled.div`
   display: flex;
 
   @media (max-width: 820px) {

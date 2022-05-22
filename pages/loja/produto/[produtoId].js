@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import * as S from './Produto.styles';
+import * as S from '../../../styles/Produto.styles';
 import Container from '../../../styles/Container';
 import { useRouter } from "next/router";
 import products from '../../../utils/products';
@@ -28,7 +28,7 @@ const Product = () => {
         <Container>
           <ProductNav />
           {products.filter(p => p.id === idRef ).map(p => (
-            <S.ProcuctArea key={p.product}>
+            <S.ProductArea key={p.product}>
               <ProductSlider photos={p.photos}>
                 <S.ProductionDesc>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum sem eros, vestibulum ultrices sem venenatis in. Fusce ut risus fermentum enim ornare blandit. Integer dapibus nulla sed tristique semper.</p>
@@ -38,7 +38,7 @@ const Product = () => {
               <ProductDatas moreInfo={false} datas={p}>
                 <ProductListDesc />
               </ProductDatas>
-            </S.ProcuctArea>
+            </S.ProductArea>
           ))}
         </Container>
       </S.ProductContainer>
