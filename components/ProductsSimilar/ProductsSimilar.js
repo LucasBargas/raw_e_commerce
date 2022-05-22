@@ -5,7 +5,6 @@ import TitleSection from '../TitleSection/TitleSection';
 import ProductCard from '../ProductCard/ProductCard';
 
 const ProductsSimilar = ({ similar }) => {
-  console.log(similar)
   return (
     <S.ProductsSimilarContainer>
       <Container>

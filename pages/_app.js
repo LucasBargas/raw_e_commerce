@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import Theme from '../styles/Themes';
 import Header from '../layout/Header/Header';
 import MainContent from '../styles/MainContent';
+import Footer from '../layout/Footer/Footer';
 import { UserStorage } from '../utils/Context';
 
 const App = ({ Component, pageProps }) => {
@@ -14,6 +15,7 @@ const App = ({ Component, pageProps }) => {
         <MainContent>
           <Component {...pageProps} />
         </MainContent>
+        <Footer />
       </UserStorage>
     </ThemeProvider>
   )
