@@ -14,8 +14,7 @@ const navBarLinks = [
   { title: 'Início', path: '/' },
   { title: 'Loja', path: '/loja' },
   { title: 'Quem Somos', path: '/quem-somos' },
-  { title: 'Contato', path: '/contato' },
-  { title: 'Blog', path: '/blog' },
+  { title: 'Contato', path: '/contato' }
 ];
 
 const NavBar = () => {
