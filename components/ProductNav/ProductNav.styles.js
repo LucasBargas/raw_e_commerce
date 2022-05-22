@@ -5,7 +5,7 @@ export const ProductNavContainer = styled.section`
   justify-content: space-between;
   padding-bottom: 2rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 820px) {
     padding-bottom: 0;
   }
 

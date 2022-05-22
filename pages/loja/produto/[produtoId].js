@@ -1,3 +1,4 @@
+import React, {useContext} from 'react';
 import Head from 'next/head';
 import * as S from '../../../styles/Produto.styles';
 import Container from '../../../styles/Container';
@@ -7,10 +8,23 @@ import ProductSlider from '../../../components/ProductSlider/ProductSlider';
 import ProductDatas from '../../../components/ProductDatas/ProductDatas';
 import ProductNav from '../../../components/ProductNav/ProductNav';
 import ProductListDesc from '../../../components/ProductListDesc/ProductListDesc';
+import ProductsSimilar from '../../../components/ProductsSimilar/ProductsSimilar';
+import ModalProduct from '../../../components/ModalProduct/ModalProduct';
+import { UserContext } from '../../../utils/Context';
 
 const Product = () => {
+  const { idRef } = useContext(UserContext);
   const { query } = useRouter();
-  const idRef = Number(query.produtoId);
+  const productId = Number(query.produtoId);
+
+  const similar = products.filter(p => {
+    if (productId % 2 === 0) {
+      return p.id % 2 === 0 && p.id !== productId;
+
+    } else if (productId % 2 !== 0) {
+      return p.id % 2 !== 0 && p.id !== productId;
+    }
+  })
 
   return (
     <>
@@ -27,7 +41,7 @@ const Product = () => {
       <S.ProductContainer>
         <Container>
           <ProductNav />
-          {products.filter(p => p.id === idRef ).map(p => (
+          {products.filter(p => p.id === productId ).map(p => (
             <S.ProductArea key={p.product}>
               <ProductSlider photos={p.photos}>
                 <S.ProductionDesc>
@@ -42,6 +56,8 @@ const Product = () => {
           ))}
         </Container>
       </S.ProductContainer>
+      <ProductsSimilar similar={similar} />
+      {idRef !== undefined && <ModalProduct />}
     </>
  </>
   )
