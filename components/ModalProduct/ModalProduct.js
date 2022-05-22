@@ -27,7 +27,7 @@ const ModalProduct = () => {
 
           <S.ModalProductArea>
             <ProductSlider photos={p.photos} />
-            <ProductDatas datas={p} />
+            <ProductDatas datas={p} moreInfo={true} />
           </S.ModalProductArea>
         </S.ModalArea>
       ))}

@@ -9,8 +9,6 @@ export const ProductSliderContainer = styled.div`
 `;
 
 export const SliderArea = styled.figure`
-  width: 100%;
-  height: 100%;
   position: relative;
 
   span {
@@ -29,6 +27,7 @@ export const SliderArea = styled.figure`
 
     &.show {
       opacity: 1 !important;
+      z-index: 6;
     }
 
     img {

@@ -1,13 +1,11 @@
 import React, {useContext} from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import * as S from './ProductDatas.styles';
 import ProductForm from './ProductForm/ProductForm';
 import { UserContext } from '../../utils/Context';
 
-const ProductDatas = ({ datas, children }) => {
+const ProductDatas = ({ datas, children, moreInfo }) => {
   const { setIdRef } = useContext(UserContext);
-  const { pathname } = useRouter();
 
   return (
     <S.ProductDatasContainer>
@@ -15,7 +13,7 @@ const ProductDatas = ({ datas, children }) => {
       <span>SKU: {datas.sku}</span>
       <p>R$ {datas.price.toString().replace('.', ',')}</p>
       <ProductForm datas={datas} />
-      {pathname !== `/loja/produto/${datas.id}` && (
+      {moreInfo && (
         <S.LinkToShow>
           <Link href={`/loja/produto/${datas.id}`}>
             <a onClick={() => setIdRef(undefined)}>Ver mais informações</a>
