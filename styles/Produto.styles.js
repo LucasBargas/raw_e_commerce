@@ -30,5 +30,6 @@ export const ProductionDesc = styled.div`
 
   p {
     line-height: 1.375rem;  
+    color: ${({ theme }) => theme.colors.primaryColor};
   }
 `;
