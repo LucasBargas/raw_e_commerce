@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { useRouter } from 'next/router';
 import { UserContext } from "../../utils/Context";
 import products from '../../utils/products';
 import * as S from './ModalProduct.styles';
@@ -8,7 +7,6 @@ import ProductDatas from '../ProductDatas/ProductDatas';
 import ProductSlider from '../ProductSlider/ProductSlider';
 
 const ModalProduct = () => {
-  const { pathname } = useRouter();
   const { idRef, setIdRef } = useContext(UserContext);
 
   const closeModal = () => setIdRef(undefined);
