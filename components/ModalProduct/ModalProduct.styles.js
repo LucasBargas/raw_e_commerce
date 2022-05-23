@@ -24,7 +24,7 @@ export const ModalContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, .9);
   position: fixed;
   top: 0;
   left: 0;

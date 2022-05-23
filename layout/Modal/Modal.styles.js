@@ -15,7 +15,7 @@ export const ModalContainer = styled.section`
   display: ${({ modal }) => (modal ? 'flex' : 'none')};
   justify-content: center;
   align-items: center;
-  background: rgba(13, 16, 23, .9);
+  background: rgba(0, 0, 0, .9);
   position: fixed;
   top: 0;
   left: 0;
