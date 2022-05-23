@@ -4,6 +4,7 @@ const ShowcaseArea = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem 1.5rem;
+  padding-bottom: ${({ paddingBottom }) => (paddingBottom ? paddingBottom : '0')};
 
   @media (max-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);

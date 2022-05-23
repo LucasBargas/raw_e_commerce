@@ -1,8 +1,8 @@
 import ShowcaseArea from "./Showcase.styles";
 
-const Showcase = ({ children }) => {
+const Showcase = ({ paddingBottom, children }) => {
   return (
-    <ShowcaseArea>
+    <ShowcaseArea paddingBottom={paddingBottom}>
       {children}
     </ShowcaseArea>
   )

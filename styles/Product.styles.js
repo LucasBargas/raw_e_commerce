@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProductContainer = styled.section`
-  padding: 3rem 0;
+  padding: 3rem 0 4rem 0;
 `;
 
 export const ProductArea = styled.div`

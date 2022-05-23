@@ -9,7 +9,7 @@ const ProductsSimilar = ({ similar }) => {
     <S.ProductsSimilarContainer>
       <Container>
         <TitleSection>Produtos Semelhantes</TitleSection>
-        <Showcase>
+        <Showcase paddingBottom='5rem'>
           {similar.map(p => (
             <ProductCard p={p} key={p.product} href={`/loja/produto/${p.id}`} id={p.id} />
           ))}
