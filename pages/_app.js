@@ -5,6 +5,7 @@ import Header from '../layout/Header/Header';
 import MainContent from '../styles/MainContent';
 import Footer from '../layout/Footer/Footer';
 import { UserStorage } from '../utils/Context';
+import Modal from '../layout/Modal/Modal';
 
 const App = ({ Component, pageProps }) => {
   return (
@@ -16,6 +17,7 @@ const App = ({ Component, pageProps }) => {
           <Component {...pageProps} />
         </MainContent>
         <Footer />
+        <Modal />
       </UserStorage>
     </ThemeProvider>
   )

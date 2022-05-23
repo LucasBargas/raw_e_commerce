@@ -17,14 +17,9 @@ export const FooterTopArea = styled.div`
   }
 `;
 
-
-
-
-
-
 export const FooterBottom = styled.section`
   background: ${({ theme }) => theme.colors.grayColor};
-  padding: 2rem 0;
+  padding: 1rem 0;
   text-align: center;
 
   p {
